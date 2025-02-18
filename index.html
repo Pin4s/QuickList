@@ -14,45 +14,48 @@
 </head>
 
 <body>
-    <header>
+    <header class="desktop-only">
         <img src="assets/logo.png" alt="">
     </header>
 
-    <main>
-        <a href="#" class="voltar">← Voltar</a>
-        <h1>Compras da semana</h1>
+    <main class="container">
+        <div class="gap-16 flex flex-col margin-44 borda">
+            <a href="#" class="voltar">← Voltar</a>
+            <h1>Compras da semana</h1>
+        </div>
 
-        <form action="">
+        <form action="" class="flex flex-col gap-16 margin-40 borda">
             <div class="input-wrapper">
                 <input type="text">
             </div>
             <button>Adicionar item</button>
         </form>
-        <div class="list-container">
-            <ul>
+
+        <div class="list-container margin-36 borda">
+            <ul class="flex flex-col gap-12 ">
                 <li>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper flex gap-12 align-center">
                         <input type="checkbox">
-                        <span>Pão de forma</span>
+                        <span class="">Pão de forma</span>
                         <img src="assets/lixeira.svg" alt="">
                     </div>
                 </li>
                 <li>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper flex gap-12 align-center">
                         <input type="checkbox">
                         <span>Café preto</span>
                         <img src="assets/lixeira.svg" alt="">
                     </div>
                 </li>
                 <li>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper flex gap-12 align-center">
                         <input type="checkbox">
                         <span>Suco de laranja</span>
                         <img src="assets/lixeira.svg" alt="">
                     </div>
                 </li>
                 <li>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper flex gap-12 align-center">
                         <input type="checkbox">
                         <span>Bolacha</span>
                         <img src="assets/lixeira.svg" alt="">

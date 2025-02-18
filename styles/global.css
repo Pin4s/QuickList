@@ -23,8 +23,54 @@
     /* Border */
     --border-primary: #D1D5DB;
     --border-hover: #B9C2D0;
+
+    /* Fonts */
+    --font-family: 'Inter', sans-serif;
+    --title: 700 rem/2rem var(--font-family); /* Corrigido */
+    --label: 600 1rem/1.25rem var(--font-family);
+    --paragraph: 500 1rem/1.25rem var(--font-family);
+    --link: 500 0.875rem/1rem var(--font-family);
+
+
 }
 
-ul{
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-primary);
+    
+}
+
+main {
+    margin-top: 2rem;
+}
+
+h1{
+   font: var(--title);
+   color: var(--content-primary);
+}
+
+p{
+    font: var(--paragraph);
+}
+
+a{
+   text-decoration: none; 
+   color: var(--color-brand);
+   font: var(--link);
+}
+
+button{
+    background-color: var(--color-brand);
+    font: var(--label);
+    color: var(--always-white);
+}
+
+ul {
     list-style: none;
+    width: 100%;
+}
+
+span{
+    font: var(--paragraph);
+    color: var(--content-secondary);
 }

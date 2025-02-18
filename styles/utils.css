@@ -1,0 +1,44 @@
+.desktop-only {
+    display: none;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(24.375rem, 100% - (2rem * 2));
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-16 {
+    gap: 1.25rem;
+}
+
+.gap-12 {
+    gap: 0.75rem;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.margin-44 {
+    margin-bottom: 44px;
+}
+
+.margin-40 {
+    margin-bottom: 40px;
+}
+
+.margin-36 {
+    margin-bottom: 36px;
+}
+
+.borda{
+    border: 1px solid red;
+}
