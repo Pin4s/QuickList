@@ -26,7 +26,7 @@ const createItem = (event) => {
     div.classList.add("flex", "input-wrapper", "gap-12", "align-center", "pad-12");
     checkbox.type = "checkbox";
     img.src = "assets/icons/lixeira.svg";
-    img.classList.add("thresh")
+    img.classList.add("trash")
     span.textContent = text;
 
     //estruturando
@@ -41,9 +41,9 @@ const createItem = (event) => {
     
 }
 
-ul.addEventListener("click", () => {
-    if(event.target.classList.contains("trash")){
-        event.target.closest("li").remove()
+ul.addEventListener("click", (e) => {
+    if(e.target.classList.contains("trash")){
+        e.target.closest("li").remove()
     }
 })
 
