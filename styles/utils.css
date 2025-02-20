@@ -1,7 +1,3 @@
-.desktop-only {
-    display: none;
-}
-
 .container {
     margin-inline: auto;
     width: min(24.375rem, 100% - (2rem * 2));

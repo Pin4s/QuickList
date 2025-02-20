@@ -38,11 +38,17 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background-dark);
+    height: 100vh;
  
 }
 
+header{
+    display: none;
+
+}
+
 main {
-    margin-top: 2rem;
+    margin-top: 20%;
 }
 
 h1{
@@ -73,4 +79,10 @@ span{
 main div:first-child a{
     display: flex;
     text-justify: center;
+}
+
+@media (width > 800px) {
+    main {
+        margin-top: 2rem;
+    }
 }
