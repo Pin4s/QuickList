@@ -8,6 +8,7 @@
     /* Background */
     --background-primary: #F4F5FB;
     --background-secondary: #FFFFFF;
+    --background-dark:#1E1F29;
 
     /* Color */
     --color-brand: #CA3884;
@@ -26,18 +27,18 @@
 
     /* Fonts */
     --font-family: 'Inter', sans-serif;
-    --title: 700 rem/2rem var(--font-family); /* Corrigido */
+    --title: 700 1.5rem/2rem var(--font-family); /* Corrigido */
     --label: 600 1rem/1.25rem var(--font-family);
     --paragraph: 500 1rem/1.25rem var(--font-family);
     --link: 500 0.875rem/1rem var(--font-family);
-
+ 
 
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--background-primary);
-    
+    background-color: var(--background-dark);
+ 
 }
 
 main {
@@ -46,7 +47,7 @@ main {
 
 h1{
    font: var(--title);
-   color: var(--content-primary);
+   color: var(--background-primary);
 }
 
 p{
@@ -59,12 +60,6 @@ a{
    font: var(--link);
 }
 
-button{
-    background-color: var(--color-brand);
-    font: var(--label);
-    color: var(--always-white);
-}
-
 ul {
     list-style: none;
     width: 100%;
@@ -73,4 +68,9 @@ ul {
 span{
     font: var(--paragraph);
     color: var(--content-secondary);
+}
+
+main div:first-child a{
+    display: flex;
+    text-justify: center;
 }

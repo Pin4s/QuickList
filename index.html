@@ -15,58 +15,76 @@
 
 <body>
     <header class="desktop-only">
-        <img src="assets/logo.png" alt="">
+        <img src="assets/icons/logo.png" alt="">
     </header>
 
     <main class="container">
-        <div class="gap-16 flex flex-col margin-44 borda">
+        <div class="gap-16 flex flex-col margin-44 ">
             <a href="#" class="voltar">← Voltar</a>
             <h1>Compras da semana</h1>
         </div>
 
-        <form action="" class="flex flex-col gap-16 margin-40 borda">
-            <div class="input-wrapper">
-                <input type="text">
+        <form action="" class="flex flex-col gap-16 margin-40 ">
+            <div id="new-item" class="input-wrapper">
+                <input class="pad-12 pad-x-18" type="text" placeholder="Adicione um novo item">
             </div>
-            <button>Adicionar item</button>
+            <button class="pad-12">Adicionar item</button>
         </form>
 
-        <div class="list-container margin-36 borda">
+        <div class="list-container margin-36 ">
             <ul class="flex flex-col gap-12 ">
                 <li>
-                    <div class="input-wrapper flex gap-12 align-center">
+                    <div class="input-wrapper flex gap-12 align-center pad-12">
                         <input type="checkbox">
                         <span class="">Pão de forma</span>
-                        <img src="assets/lixeira.svg" alt="">
+                        <button>
+                            <img src="assets/icons/lixeira.svg" alt="">
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <div class="input-wrapper flex gap-12 align-center">
+                    <div class="input-wrapper flex gap-12 align-center pad-12">
                         <input type="checkbox">
                         <span>Café preto</span>
-                        <img src="assets/lixeira.svg" alt="">
+                        <button>
+                            <img src="assets/icons/lixeira.svg" alt="">
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <div class="input-wrapper flex gap-12 align-center">
+                    <div class="input-wrapper flex gap-12 align-center pad-12">
                         <input type="checkbox">
                         <span>Suco de laranja</span>
-                        <img src="assets/lixeira.svg" alt="">
+                        <button>
+                            <img src="assets/icons/lixeira.svg" alt="">
+                        </button>
                     </div>
                 </li>
                 <li>
-                    <div class="input-wrapper flex gap-12 align-center">
+                    <div class="input-wrapper flex gap-12 align-center pad-12">
                         <input type="checkbox">
                         <span>Bolacha</span>
-                        <img src="assets/lixeira.svg" alt="">
+                        <button>
+                            <img src="assets/icons/lixeira.svg" alt="">
+                        </button>
                     </div>
                 </li>
             </ul>
         </div>
 
+        <div class="display-none">
+            <div id="deleted-alert" class="flex gap-12 align-center pad-12 display-none">
+                <img src="assets/icons/alert.svg" alt="">
+                <span id="deleted-alert-text">O item foi removido da lista</span>
+                <img class="teste" src="assets/icons/lixeira.svg" alt="">
+            </div>
+        </div>
+
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>
