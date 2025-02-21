@@ -57,6 +57,15 @@
 
 .dark-mode{
     background-color: #1a1a1a;
+
+    h1{
+        color:  var(--background-primary);
+    }
+    & header {
+        & button img{
+            filter: invert(1);
+        }
+    }
 }
 
 @media (width >= 800px) {

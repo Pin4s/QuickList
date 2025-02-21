@@ -6,7 +6,7 @@
 
 :root {
     /* Background */
-    --background-primary: #F4F5FB;
+    --background-primary: #E9F4FA;
     --background-secondary: #FFFFFF;
     --background-dark:#1E1F29;
 
@@ -37,7 +37,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--background-dark);
+    background-color: var(--background-primary);
     height: 100vh;
  
 }
@@ -53,7 +53,7 @@ main {
 
 h1{
    font: var(--title);
-   color: var(--background-primary);
+   color:  var(--content-secondary);
 }
 
 p{
@@ -86,3 +86,4 @@ main div:first-child a{
         margin-top: 2rem;
     }
 }
+

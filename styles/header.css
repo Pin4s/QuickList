@@ -9,8 +9,23 @@
             width: 24.375rem;
         }
     
-        & img {
-            
+        & button#dark-mode-toggle {
+            background: none;
+            border: none;
+
+            position: absolute;
+
+            top: 2rem;
+            right: 2rem;
+
+            :hover{
+                cursor: pointer;
+            }
+
+            & img{
+                width: 1.5rem;
+                
+            }
         }
     }
 }

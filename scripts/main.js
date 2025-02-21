@@ -2,6 +2,7 @@
 const ul = document.querySelector("ul");
 const form = document.querySelector("form");
 const input = document.getElementById("new-item-input");
+const darkModeBtn = document.getElementById("dark-mode-toggle")
 
 const createItem = (event) => {
     event.preventDefault(); 
@@ -46,5 +47,10 @@ ul.addEventListener("click", (e) => {
         e.target.closest("li").remove()
     }
 })
+
+function toggleMode(){
+    document.body.classList.toggle("dark-mode")
+}
+darkModeBtn.addEventListener("click", toggleMode);
 
 form.addEventListener("submit", createItem);
